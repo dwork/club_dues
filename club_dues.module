@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Club Dues feature.
+ */
+
+include_once 'club_dues.features.inc';
