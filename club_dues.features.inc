@@ -45,3 +45,21 @@ function club_dues_node_info() {
   );
   return $items;
 }
+
+/**
+ * Implements hook_default_profile2_type().
+ */
+function club_dues_default_profile2_type() {
+  $items = array();
+  $items['membership'] = entity_import('profile2_type', '{
+    "userCategory" : true,
+    "userView" : true,
+    "type" : "membership",
+    "label" : "Membership",
+    "weight" : "0",
+    "data" : { "registration" : 1 },
+    "metatags" : [],
+    "rdf_mapping" : []
+  }');
+  return $items;
+}

@@ -2492,17 +2492,414 @@ Chapter/Club Membership Chair',
     ),
   );
 
+  // Exported field: 'profile2-membership-field_amount_paid'.
+  $fields['profile2-membership-field_amount_paid'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_amount_paid',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+        'precision' => '10',
+        'profile2_private' => FALSE,
+        'scale' => '2',
+      ),
+      'translatable' => '0',
+      'type' => 'number_decimal',
+    ),
+    'field_instance' => array(
+      'bundle' => 'membership',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Amount paid with membership application',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 4,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'profile2',
+      'field_name' => 'field_amount_paid',
+      'label' => 'Amount Paid',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '6',
+      ),
+    ),
+  );
+
+  // Exported field: 'profile2-membership-field_date_joined'.
+  $fields['profile2-membership-field_date_joined'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_date_joined',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'date',
+      'settings' => array(
+        'cache_count' => '4',
+        'cache_enabled' => 0,
+        'granularity' => array(
+          'day' => 'day',
+          'hour' => 0,
+          'minute' => 0,
+          'month' => 'month',
+          'second' => 0,
+          'year' => 'year',
+        ),
+        'profile2_private' => 0,
+        'repeat' => '0',
+        'timezone_db' => '',
+        'todate' => '',
+        'tz_handling' => 'none',
+      ),
+      'translatable' => '0',
+      'type' => 'datetime',
+    ),
+    'field_instance' => array(
+      'bundle' => 'membership',
+      'deleted' => '0',
+      'description' => 'The date this member joined the club',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'date',
+          'settings' => array(
+            'format_type' => 'long',
+            'fromto' => 'both',
+            'multiple_from' => '',
+            'multiple_number' => '',
+            'multiple_to' => '',
+            'show_repeat_rule' => 'show',
+          ),
+          'type' => 'date_default',
+          'weight' => 0,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'profile2',
+      'field_name' => 'field_date_joined',
+      'label' => 'Date Joined',
+      'required' => 1,
+      'settings' => array(
+        'default_value' => 'now',
+        'default_value2' => 'same',
+        'default_value_code' => '',
+        'default_value_code2' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'date',
+        'settings' => array(
+          'increment' => '15',
+          'input_format' => 'm/d/Y - H:i:s',
+          'input_format_custom' => '',
+          'label_position' => 'above',
+          'repeat_collapsed' => 0,
+          'text_parts' => array(),
+          'year_range' => '-3:+3',
+        ),
+        'type' => 'date_popup',
+        'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'profile2-membership-field_date_paid'.
+  $fields['profile2-membership-field_date_paid'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_date_paid',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'date',
+      'settings' => array(
+        'cache_count' => '4',
+        'cache_enabled' => 0,
+        'granularity' => array(
+          'day' => 'day',
+          'hour' => 0,
+          'minute' => 0,
+          'month' => 'month',
+          'second' => 0,
+          'year' => 'year',
+        ),
+        'profile2_private' => 0,
+        'repeat' => '0',
+        'timezone_db' => '',
+        'todate' => '',
+        'tz_handling' => 'none',
+      ),
+      'translatable' => '0',
+      'type' => 'datetime',
+    ),
+    'field_instance' => array(
+      'bundle' => 'membership',
+      'deleted' => '0',
+      'description' => 'Check or authorization date for payment',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'date',
+          'settings' => array(
+            'format_type' => 'long',
+            'fromto' => 'both',
+            'multiple_from' => '',
+            'multiple_number' => '',
+            'multiple_to' => '',
+            'show_repeat_rule' => 'show',
+          ),
+          'type' => 'date_default',
+          'weight' => 3,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'profile2',
+      'field_name' => 'field_date_paid',
+      'label' => 'Date Paid',
+      'required' => 0,
+      'settings' => array(
+        'default_value' => 'blank',
+        'default_value2' => 'same',
+        'default_value_code' => '',
+        'default_value_code2' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'date',
+        'settings' => array(
+          'increment' => '15',
+          'input_format' => 'm/d/Y - H:i:s',
+          'input_format_custom' => '',
+          'label_position' => 'above',
+          'repeat_collapsed' => 0,
+          'text_parts' => array(),
+          'year_range' => '-3:+3',
+        ),
+        'type' => 'date_popup',
+        'weight' => '4',
+      ),
+    ),
+  );
+
+  // Exported field: 'profile2-membership-field_document'.
+  $fields['profile2-membership-field_document'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_document',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+        'profile2_private' => FALSE,
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'membership',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'If dues were paid, this notes the check# or VISA/MC indicator for payment',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 2,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'profile2',
+      'field_name' => 'field_document',
+      'label' => 'Dues Check#',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '20',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '5',
+      ),
+    ),
+  );
+
+  // Exported field: 'profile2-membership-field_initial_dues_paid'.
+  $fields['profile2-membership-field_initial_dues_paid'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_initial_dues_paid',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'Yes' => 'Yes',
+          'No' => 'No',
+        ),
+        'allowed_values_function' => '',
+        'profile2_private' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'membership',
+      'default_value' => array(
+        0 => array(
+          'value' => 'Yes',
+        ),
+      ),
+      'deleted' => '0',
+      'description' => 'Were initial dues paid? For example, some clubs require membership dues to be submitted with the membership application.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => 1,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'profile2',
+      'field_name' => 'field_initial_dues_paid',
+      'label' => 'Initial Dues Paid',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '3',
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('"From" email address for membership emails. If there are multiple addresses, they all received BCC copies of all emails sent out by the system');
   t('Amount Due');
   t('Amount Paid');
+  t('Amount paid with membership application');
   t('Annotate payment vehicle(s) - check#, cash, etc.');
   t('Approval Message');
   t('Approval Subject');
   t('Body');
   t('Chapter/Club');
   t('Chapter/Club to which this particular membership policy applies. Generally, dues and policy entries should be identical from chapter to chapter, but email setup may be different.');
+  t('Check or authorization date for payment');
+  t('Date Joined');
   t('Date Paid');
   t('Date the membership fee is due; generally, this will be the date the member joins or the anniversary date according to the membership policy.');
   t('Determines how membership renewal is accomplished. "Automatic" renewal means that membership renewal is assumed for any active member when the renewal date (by anniversary date or policy date range) is reached. "Membership" renewal means that a membership vote is required. "Officers" renewal means the chapter/club\'s board must approve renewal. "Non-renewable" means that membership status will flip from Active to Inactive (or Former Member) as specified in the membership profile automatically when the member\'s renewal date is reached.');
@@ -2512,6 +2909,7 @@ Chapter/Club Membership Chair',
   t('Dues');
   t('Dues Admin Email');
   t('Dues Application Rule');
+  t('Dues Check#');
   t('Dues Period');
   t('Dues amount');
   t('Enter the entire text of the email message, including signature. You may use the following tokens: [Dues] [Dues Period] [First Name] [Last Name] [Join Date] [Anniversary Date]. ');
@@ -2522,6 +2920,8 @@ Chapter/Club Membership Chair',
   t('If a member quit during the term of his or her membership, are the remaining dues prorated as a refund? This has to be handled "off-system".');
   t('If a membership starts mid-period, are dues prorated?');
   t('If dues are not paid, this is the number of days before the due date when the second reminder notice is triggered (a negative number of days)');
+  t('If dues were paid, this notes the check# or VISA/MC indicator for payment');
+  t('Initial Dues Paid');
   t('Initiation Fee');
   t('Member');
   t('Member\'s chapter/club when dues were generated');
@@ -2541,12 +2941,14 @@ Chapter/Club Membership Chair',
   t('Test');
   t('Test Email Address');
   t('Test email address, used to test various email notices');
+  t('The date this member joined the club');
   t('The number of days before the due date scheduled to send out the FIRST reminder notice');
   t('The period of time the dues payment covers.');
   t('This is an optional one-time Initiation/Setup fee.');
   t('This is the subject of the "approval" email, sent to members or to the board. You may use the following tokens: [Dues] [Dues Period] [First Name] [Last Name] [Member] [Join Date] [Anniversary Date]. ');
   t('This is the subject of the second reminder email, sent if the member has not renewed their membership in a specified number of days before the due date.');
   t('This is the text of the "approval" email, sent to members or to the board. You may use the following tokens: [Dues] [Dues Period] [First Name] [Last Name] [Member] [Join Date] [Anniversary Date]. ');
+  t('Were initial dues paid? For example, some clubs require membership dues to be submitted with the membership application.');
 
   return $fields;
 }
