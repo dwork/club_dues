@@ -1188,7 +1188,7 @@ Chapter/Club Membership Chair',
       'entity_type' => 'node',
       'field_name' => 'field_dues_admin_email',
       'label' => 'Dues Admin Email',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1737,7 +1737,7 @@ Chapter/Club Membership Chair',
         ),
       ),
       'deleted' => '0',
-      'description' => 'The number of days before the due date scheduled to send out the FIRST reminder notice',
+      'description' => 'The number of days before the due date scheduled to send out the FIRST reminder notice. This is a NEGATIVE number -- "-30" means 30 days before the due date; "-45" means 45 days before the due date. This value ranges from "-180" to "-1".',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -1767,7 +1767,7 @@ Chapter/Club Membership Chair',
       'entity_type' => 'node',
       'field_name' => 'field_first_reminder_days',
       'label' => 'First Reminder days',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'max' => '-1',
         'min' => '-180',
@@ -2221,7 +2221,7 @@ Chapter/Club Membership Chair',
         ),
       ),
       'deleted' => '0',
-      'description' => 'If dues are not paid, this is the number of days before the due date when the second reminder notice is triggered (a negative number of days)',
+      'description' => 'If dues are not paid, this is the number of days before the due date when the second reminder notice is triggered (a negative number of days). Examples: "-7" means 7 days before the due date. "-10" means 10 days before the due date. Range is "-180" to "-1" days.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -2521,7 +2521,7 @@ Chapter/Club Membership Chair',
   t('First Reminder days');
   t('If a member quit during the term of his or her membership, are the remaining dues prorated as a refund? This has to be handled "off-system".');
   t('If a membership starts mid-period, are dues prorated?');
-  t('If dues are not paid, this is the number of days before the due date when the second reminder notice is triggered (a negative number of days)');
+  t('If dues are not paid, this is the number of days before the due date when the second reminder notice is triggered (a negative number of days). Examples: "-7" means 7 days before the due date. "-10" means 10 days before the due date. Range is "-180" to "-1" days.');
   t('Initiation Fee');
   t('Member');
   t('Member\'s chapter/club when dues were generated');
@@ -2541,7 +2541,7 @@ Chapter/Club Membership Chair',
   t('Test');
   t('Test Email Address');
   t('Test email address, used to test various email notices');
-  t('The number of days before the due date scheduled to send out the FIRST reminder notice');
+  t('The number of days before the due date scheduled to send out the FIRST reminder notice. This is a NEGATIVE number -- "-30" means 30 days before the due date; "-45" means 45 days before the due date. This value ranges from "-180" to "-1".');
   t('The period of time the dues payment covers.');
   t('This is an optional one-time Initiation/Setup fee.');
   t('This is the subject of the "approval" email, sent to members or to the board. You may use the following tokens: [Dues] [Dues Period] [First Name] [Last Name] [Member] [Join Date] [Anniversary Date]. ');

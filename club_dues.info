@@ -23,6 +23,7 @@ dependencies[] = rules
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = views
+features[content][] = Default Dues Policy
 features[content_menu_links][] = menu-dues:dues
 features[content_menu_links][] = menu-dues:dues-history
 features[content_menu_links][] = menu-dues:view-dues-policy
